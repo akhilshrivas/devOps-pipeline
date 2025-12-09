@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body { @apply bg-gray-100; }
+
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeSlideUp {
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+@keyframes fadeInSlow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadeInSlow {
+  animation: fadeInSlow 1.4s ease-out forwards;
+}
+
+@keyframes textGlow {
+  0%, 100% { text-shadow: 0 0 10px rgba(255,255,255,0.6); }
+  50% { text-shadow: 0 0 25px rgba(255,255,255,1); }
+}
+.animate-textGlow {
+  animation: textGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes floating1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -30px); }
+}
+.animate-floating1 {
+  animation: floating1 8s ease-in-out infinite;
+}
+
+@keyframes floating2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-30px, 20px); }
+}
+.animate-floating2 {
+  animation: floating2 10s ease-in-out infinite;
+}
+
+@keyframes floating3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(25px, 25px); }
+}
+.animate-floating3 {
+  animation: floating3 12s ease-in-out infinite;
+}
